@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+        <title>HTML5サンプル</title>
+        <style>
+            #content {
+                padding-top: 20px;/* iOS 10 以下の互換性を保つために20px */
+                padding-top: constant(safe-area-inset-top);/* iOS 11.2未満用 */
+                padding-top: env(safe-area-inset-top);/* iOS 11.2以上用 */
+            }
+        </style>
+    </head>
+    <body style="background-color: transparent;">
+        <div id="content">
+            <button onclick="location.href='webview-interstitial://click-show-interstitial'">インタースティシャル広告の表示</button>
+        </div>
+    </body>
+</html>
