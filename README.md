@@ -1,10 +1,10 @@
-# WebView-Interstitial-iOS
+g WebView-Interstitial-iOS
 
 WebViewからhookを受け取ってインタースティシャル広告の読み込み + 再生をするサンプル
 
 ## Env
 
-| | |
+| Tool | Version |
 |:---:|:---:|
 | Xcode | 11.4.1 |
 | CocoaPods | 1.9.1 |
