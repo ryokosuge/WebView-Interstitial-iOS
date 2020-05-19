@@ -28,6 +28,10 @@ $ gem install cocoapods
 $ pod install --repo-update
 ```
 
+## Gif
+
+![image.gif](./Assets/image.gif)
+
 ## Detail
 
 - `Resources/Simple.html`をWebView画面に表示しています。
