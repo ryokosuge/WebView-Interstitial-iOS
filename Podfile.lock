@@ -29,10 +29,12 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
+  - PKHUD (5.3.0)
   - PromisesObjC (1.2.8)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
+  - PKHUD
 
 SPEC REPOS:
   trunk:
@@ -40,6 +42,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
+    - PKHUD
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -47,8 +50,9 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 4c644d86835d827bab30ab6aabb9ecaf1f500735
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: 33fdc751f9faaebb36fb80d48eddfbe2f5ac5fdf
+PODFILE CHECKSUM: 44219884f1b524084d339fe9a7d818eb6a9e0b78
 
 COCOAPODS: 1.9.1

@@ -7,5 +7,6 @@ target 'WebViewInterstitial' do
 
   # Pods for WebViewInterstitial
   pod 'Google-Mobile-Ads-SDK'
+  pod 'PKHUD'
 
 end

@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import PKHUD
 
 private let interstitialAdUnitID = "ca-app-pub-3940256099942544/4411468910"
 
@@ -81,6 +82,9 @@ extension SimpleViewController: GADInterstitialDelegate {
             return
         }
 
+        // 読み込み中を明示する
+        HUD.flash(.labeledProgress(title: nil, subtitle: "広告の準備中"))
+
         let interstitial = GADInterstitial(adUnitID: interstitialAdUnitID)
         self.interstitial = interstitial
         interstitial.delegate = self
@@ -89,6 +93,9 @@ extension SimpleViewController: GADInterstitialDelegate {
     }
 
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        // indicatorを非表示にする
+        HUD.flash(.success, delay: 0.5)
+
         // 再生準備ができたのでそのまま再生処理に入る
         ad.present(fromRootViewController: self)
     }
